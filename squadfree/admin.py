@@ -4,4 +4,4 @@ from .models import Item
 class AuthorAdmin(admin.ModelAdmin):
     pass
 
-admin.site.register(Item,AuthorAdmin)
+admin.site.register(Item)

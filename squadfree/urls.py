@@ -1,8 +1,8 @@
 from django.urls import path
-from .views import video
+from .views import squad
 from . import views
 
 urlpatterns = [
-    path("video", views.video, name="video"),
-    path('', video),
+    path("squad", views.squad, name="squad"),
+    path('', squad),
 ]

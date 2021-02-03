@@ -1,8 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
-
-<!--About us-->
 {% block about %}
+
             <div class="content">
               <h3>Voluptatem dignissimos provident quasi</h3>
               <p>
@@ -12,20 +11,8 @@
             </div>
           </div>
 
-{% endblock %} <!--End of About Us-->
+{% endblock %}
 
-<!--Video-->
-{% block contents %}
-    <div>
-        {% for data in cc %}
-        {{data.video}}
-        {% endfor %}
-
-    </div>
-
-{% endblock %} <!--End of Video-->
-
-<!--Count Section-->
 {% block count %}
     <div class="row no-gutters">
 
@@ -80,7 +67,6 @@
     </section><!-- End Cta Section -->
 {% endblock %}
 
-<!--Contact Us-->
 {% block contacts %}
           <div class="col-lg-6">
             <div class="info-box mb-4">
@@ -144,4 +130,3 @@
       </div>
     </section>
 {% endblock %}
-<!--End of Contact-->

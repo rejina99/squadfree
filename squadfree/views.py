@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import Item, Details
 from django.http import HttpResponse
+from .forms import ContactForm
 # Create your views here.
 
 def squad(request):
@@ -10,6 +11,7 @@ def squad(request):
 def contactus(request):
     if request.method == 'POST':
         contact = Details()
+        form_class = ContactForm
         name = request.POST.get('name')
         email = request.POST.get('email')
         subject = request.POST.get('subject')
@@ -20,8 +22,9 @@ def contactus(request):
         contact.message = message
         contact.save()
         return HttpResponse("Thanks for contacting us ")
-    context = {'form': form}
-    return render(request, "index.html", context)
+    return render(request, 'index.html', {
+        'form': form_class ,
+    })
 
 
 

@@ -4,9 +4,9 @@
 <!--About us-->
 {% block about %}
             <div class="content">
-              <h3>Voluptatem dignissimos provident quasi</h3>
+              <h3>Science, technology & engineering</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                  Insights Nepal is a page that explores, produces, and shares information on contemporary social, technological, economic, political, and educational issues in Nepal.
               </p>
               <a href="#" class="about-btn">About us <i class="bx bx-chevron-right"></i></a>
             </div>
@@ -15,6 +15,7 @@
 
 <!--Video-->
 {% block contents %}
+
     <div class="center">
             {% for data in cc %}
         {% endfor %}
@@ -82,7 +83,7 @@
             <div class="info-box mb-4">
               <i class="bx bx-map"></i>
               <h3>Our Address</h3>
-              <p>A108 Adam Street, New York, NY 535022</p>
+              <p>Do Cha Marg, Maharajgunj, Kathmandu,44600</p>
             </div>
           </div>
 
@@ -90,7 +91,7 @@
             <div class="info-box  mb-4">
               <i class="bx bx-envelope"></i>
               <h3>Email Us</h3>
-              <p>contact@example.com</p>
+              <p>insightsnepal@gmail.com</p>
             </div>
           </div>
 
@@ -98,13 +99,17 @@
             <div class="info-box  mb-4">
               <i class="bx bx-phone-call"></i>
               <h3>Call Us</h3>
-              <p>+1 5589 55488 55</p>
+              <p>+977 984-9152018</p>
             </div>
           </div>
 
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-lg-6 ">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.574476416804!2d85.32578661506257!3d27.73042168278236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb193de8c73621%3A0x20c8a93881e945fd!2sDo%20Cha%20Marg%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1614241334358!5m2!1sen!2snp" style="border:0; width: 100%; height: 384px;" allowfullscreen loading="lazy"></iframe>
+          </div>
+
 
           <div class="col-lg-6">
             <form action="{% url "contactus" %}" method="POST" role="form" class="php-email-form">
